@@ -24,22 +24,22 @@ var app = new function() {
   
     this.Add = function () {
       el = document.getElementById('add-todo');
-      // Adiciona
+   
       var task = el.value;
   
       if (task) {
-        // Add novo
+        
         this.tasks.push(task.trim());
-        // Reseta input
+        
         el.value = '';
-        // nova lista
+        
         this.FetchAll();
       }
     };
   
     this.Edit = function (item) {
       var el = document.getElementById('edit-todo');
-      // Mostra
+     
       el.value = this.tasks[item];
       
       document.getElementById('edit-box').style.display = 'block';
@@ -52,18 +52,18 @@ var app = new function() {
         if (task) {
           
           self.tasks.splice(item, 1, task.trim());
-          // nova lista
+         
           self.FetchAll();
-          // esconde
+          
           CloseInput();
         }
       }
     };
   
     this.Delete = function (item) {
-      // apaga linha
+      
       this.tasks.splice(item, 1);
-      // mostra lista nova
+    
       this.FetchAll();
     };
   
