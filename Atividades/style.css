@@ -9,9 +9,6 @@
       text-align: center
   }
 
-  input[type='submit'], button, [aria-label]{
-    cursor: pointer;
-  }
   #edit-box{
     display: none;
     max-width: 80%;
@@ -19,12 +16,21 @@
     margin-top: 10px;
   }
 
+  input[type='submit'], button, [aria-label]{
+    cursor: pointer;
+  }
+
+
+  .to-do{
+    background: transparent !important;
+}
+
+ 
+
   td{
       background-color: aliceblue;
       padding-right: 10px;
       text-align: left;
   }
 
-  .to-do{
-      background: transparent !important;
-  }
+  
