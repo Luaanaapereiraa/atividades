@@ -17,7 +17,9 @@ var app = new function() {
           data += '</tr>';
         }
       }
-  
+
+
+      
       this.Count(this.tasks.length);
       return this.el.innerHTML = data;
     };
